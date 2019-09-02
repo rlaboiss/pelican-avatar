@@ -81,7 +81,7 @@ class TestLibravatarMissing (TestLibravatarURL):
                                               self.library})
 
     def test_url (self):
-        TestLibravatarURL.test_url (self, '\?d=' + self.library)
+        TestLibravatarURL.test_url (self, r'\?d=' + self.library)
 
 
 class TestLibravatarSize (TestLibravatarURL):
@@ -93,5 +93,5 @@ class TestLibravatarSize (TestLibravatarURL):
                                   override = {'LIBRAVATAR_SIZE': self.size})
 
     def test_url (self):
-        TestLibravatarURL.test_url (self, '\?s=' + str (self.size))
+        TestLibravatarURL.test_url (self, r'\?s=' + str (self.size))
 
